@@ -1,2 +1,2 @@
 # sky
-hello
+This is the python study notes of zhengkai.
