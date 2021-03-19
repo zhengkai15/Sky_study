@@ -1,9 +1,9 @@
-/*
- * @Author: Kai zheng 
- * @Date: 2021-03-11 18:13:16 
- * @Last Modified by: Kai Zheng
- * @Last Modified time: 2021-03-11 18:14:14
- */
+# /*
+#  * @Author: Kai zheng 
+#  * @Date: 2021-03-11 18:13:16 
+#  * @Last Modified by: Kai Zheng
+#  * @Last Modified time: 2021-03-11 18:14:14
+#  */
 
 
 
@@ -15,7 +15,8 @@
 class zk():
 	def __init__(self,A=3):
 		print("hello=",A)
-		self.B()	
+		self.B()
+		# B()	
 	def B(self,):
 		print("hello B")	
 
