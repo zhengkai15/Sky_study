@@ -1,23 +1,23 @@
-# class Solution:
-#     def romanToInt(self, s: str) -> int:
-#         if not s:
-#             return 0
-#         result = 0
-#         length = len(s)
-#         myDict = {"M":1000, "D":500, "C":100, "L":50, "X":10, "V":5, "I":1}
-#         for index in range(length):
-#             if index + 1 >= length or myDict[s[index + 1]] <= myDict[s[index]]:
-#             # if  myDict[s[index + 1]] <= myDict[s[index]]:
-#                 result += myDict[s[index]]
-#             else:
-#                 result -= myDict[s[index]]
-#         return result
+class Solution:
+    def romanToInt(self, s: str) -> int:
+        if not s:
+            return 0
+        result = 0
+        length = len(s)
+        myDict = {"M":1000, "D":500, "C":100, "L":50, "X":10, "V":5, "I":1}
+        for index in range(length):
+            if index + 1 >= length or myDict[s[index + 1]] <= myDict[s[index]]:
+            # if  myDict[s[index + 1]] <= myDict[s[index]]:
+                result += myDict[s[index]]
+            else:
+                result -= myDict[s[index]]
+        return result
 
 
 
-# if __name__ == '__main__':
-#     s=Solution()
-#     print(s.romanToInt('LVIII'))
+if __name__ == '__main__':
+    s=Solution()
+    print(s.romanToInt('III'))
 
 
 
